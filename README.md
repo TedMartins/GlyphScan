@@ -16,7 +16,7 @@ The application provides three distinct outputs upon analysis:
 
 The tool can be used online, requiring no external dependencies or server-side processing.
 
-1.  **Access the Deployed Page:** Navigate to the live application at: [DEPLOY URL]
+1.  **Access the Deployed Page:** Navigate to the live application at: [GLYPH SCAN](https://tedmartins.github.io/GlyphScan/)
 2.  **Input Text:** Paste the text you wish to analyze into the **Input** text area.
 3.  **Analyze:** Click the **Analyze** button or use the keyboard shortcut `Ctrl + Enter` to process the text.
 
