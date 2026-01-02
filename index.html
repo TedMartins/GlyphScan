@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLYPH SCAN</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GLYPH SCAN</h1>
+        <p class="subtitle">Diacritic Character Analysis Tool</p>
+
+        <div class="info-box">
+            <strong>Usage:</strong> Paste your text on the left and click "Analyze" to see all accented characters and their occurrences.
+        </div>
+
+        <div class="stats" id="statsContainer" style="display: none;">
+            <div class="stat-card">
+                <div class="stat-label">Total Accents</div>
+                <div class="stat-value" id="totalAccents">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Unique Characters</div>
+                <div class="stat-value" id="uniqueAccents">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Words Analyzed</div>
+                <div class="stat-value" id="totalWords">0</div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="section">
+                <h2>Input</h2>
+                <textarea id="inputText" placeholder="Paste your text here..."></textarea>
+            </div>
+
+            <div class="section">
+                <h2>Analysis</h2>
+                <div id="resultArea" class="empty-state">
+                    Results will appear here after analysis.
+                </div>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button class="btn-analyze" onclick="analyzeText()">Analyze</button>
+            <button class="btn-clear" onclick="clearAll()">Clear</button>
+        </div>
+
+        <div class="characters-section" id="charactersSection">
+            <h3>Characters Identified</h3>
+            <div id="charactersOutput"></div>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
